@@ -1,6 +1,6 @@
-# patient-template-generator
+# react-electron-starter
 
-Patient wellness recording application built with React &amp; Electron.
+Starter application using React && Electron.
 
 # Miscs
 

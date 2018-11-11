@@ -1,9 +1,9 @@
 {
-  "name": "patient-template-generator",
+  "name": "react-electron-starter",
   "version": "0.1.0",
   "private": true,
   "main": "public/electron.js",
-  "description": "Patient infomration template generator.",
+  "description": "React and electron starter",
   "homepage": "./",
   "author": "shawnkoon",
   "scripts": {
@@ -11,9 +11,7 @@
     "react-build": "react-scripts build",
     "react-test": "react-scripts test --env=jsdom",
     "react-eject": "react-scripts eject",
-    "electron-build": "electron-builder",
-    "release": "yarn react-build && electron-builder --publish=always",
-    "build": "yarn react-build && yarn electron-build",
+    "build": "yarn react-build && electron-builder -mw",
     "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
@@ -26,6 +24,7 @@
     "not op_mini all"
   ],
   "dependencies": {
+    "cross-env": "^5.2.0",
     "electron-is-dev": "^1.0.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1"
@@ -35,7 +34,7 @@
     "electron": "^3.0.8",
     "electron-builder": "^20.34.0",
     "prettier": "^1.15.2",
-    "wait-on": "^3.2.0",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "wait-on": "^3.2.0"
   }
 }
